@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up</title>
+</head>
+
+<body>
+    <nav class="navbar">
+            <a href="index.html"><img src="admin ver/logo.jpg" width="60" height="60" alt="logo"></a>
+        <div class="menu-toggle">
+            <ul>
+                <pre></pre>
+                <li><a href="#about">about</a></li>
+                <li><a href="#contact">contact us</a></li>
+            </ul>
+        </div>
+    </nav>
+    <pre>Welcome to our website!
+Please fill in these fields...
+     </pre>
+     <form action="homepage.html" method="post">
+        <label for="username">Enter your username</label><br>
+        <input id="username" type="text" placeholder="Username" required name="username" autofocus><br>
+
+        <label for="password">Enter your password</label><br>
+        <input  id="password" 
+                type="password"
+                placeholder="Password" 
+                required 
+                name="password" 
+                minlength="8"
+                maxlength="20"
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+                title="Set a strong password (?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" ><br>
+
+        <label for="confirming">Confirm your password</label><br>
+        <input id="confirming"
+               type="password" 
+               placeholder="Confirm your password" 
+               required
+               name="password"
+               ><br> 
+
+        <label for="email">Enter your E-mail</label><br>
+        <input id="email" type="email" placeholder="Email Address" required name="email"><br>
+        <label>Are you admin or not:</label><br>
+        <input id="admin" type="radio" name="Is-Admin" value="Yes" checked>
+        <label for="admin">Yes</label>
+
+        <input id="user" type="radio" name="Is-Admin" value="No">
+        <label for="user">No</label><br>
+        <button type="submit">Sign-Up</button>
+    </form>
+</body>
+
+</html>
