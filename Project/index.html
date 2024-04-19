@@ -1,71 +1,181 @@
-<!DOCTYPE html>
 
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Library Home Page</title>
-     </head>
-    <body>
-        <a href="index.html"><img src="admin ver/online-education-concept-flat-icons-set-e-library-knowledge-vector-illustration-75799307.jpg" width="60" height="60" alt="logo"></a>
-        <h1>ONLINE LIBRARY</h1>
-        <h3>Welcome to our online library website . Here you can view , search and borrow any book you want</h3>
-        <nav class="navbar">
-            <div class="menu-toggle">
-           <ul>
-            <li><a href="login.html">login</a></li>
-             <li><a href="signup.html">Sign up</a></li>
-             <li><a href="#about">about</a></li>
-             <li><a href="#contact">contact us</a></li>
-           </ul>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Home Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css_Folder/style2.css">
+</head>
+<body>
+
+    
+    <a href="homepage.html" class="logo">
+        <img src="css_Folder/logo.jpg" width="120" height="80" alt="logo">
+    </a> 
+    
+    <section>  
+    
+    <!-- Navigation bar -->
+    <nav class="navbar">
+        <div class="menu-toggle">
+       <ul>
+         <li><a href="#about">about</a></li>
+         <li><a href="#contact">contact us</a></li>
+         <div class="log"><li><a href="login.html">Login</a></li></div>
+         <!-- <li><a href="signup.html">Sign up</a></li> -->
+
+
+         
+       </ul>
+       </div>
+       
+    </nav>
+
+    </section>
+
+    <section class="library">
+        &nbsp;
+    </section>
+
+    <div class="main">
+    <h1>ONLINE <span>LIBRARY</span></h1>
+    <h3>Welcome to our online library website . Here you can view , search and borrow any book you want</h3>
+    </div>   
+    <br>
+     
+    <div class="search-box">
+        
+        <input type="search" class="search" placeholder="Search here ...">
+        <select name="options" id="options">
+            <option value="author">author</option>
+            <option value="titles">titles</option>
+            <option value="category">category</option>
+        </select>
+        
+    </div>
+    <br>
+
+    <div class="about">
+        <div class="about_img">
+           <img src="css_Folder/web_about_us.png">
+        </div>
+        <div class="about_tag">
+        <h2>Our library website:</h2>
+         <p>Your place to read ebooks for free by an easy way!
+        We are committed to providing you with a wide range of electronic books, including but not limited to  novels, short stories, textbooks and reference
+        That all in one place that providing by our team of students.</p>
+        </div>
+    </div>
+
+    <br>
+    <div class="latest">
+    <h1>The latest book:</h1>
+    <div class="latest_book_box">
+        <div class="latest_book_card">
+
+            <div class="book_img">
+                <img src="61IfMJXDViL._SY445_SX342_.jpg" alt="The Woman from Tantoura">               
+              </div>
+
+          <div class="book_tag">
+            <h2> The Woman from Tantoura </h2>
+            <a href="hbook1.html" class="btn">Learn More</a>           
+          </div>
+         
+         </div>
+
+
+         <div class="latest_book_card">
+           
+  
+              <div class="book_img">
+                <img src="3._SY475_.jpg" alt="Harry Potter and The Philosopher's stone">              
+                </div>
+  
+            <div class="book_tag">
+                <h2> Harry Potter and The Philosopher's stone </h2>
+                <a href="fbook3.html" class="btn">Learn More</a> 
+                           
+            </div>
+           
            </div>
 
-        </nav>
-        <div class="latest">
-        <h1>The latest book:</h1>
-        <a href="hbook1.html">
-            <div class="book">
-                <h2> The Woman from Tantoura </h2>
-                <img src="61IfMJXDViL._SY445_SX342_.jpg" alt="The Woman from Tantoura">               
-            </div>
-        </a> 
-         <br>
-         <a href="fbook3.html">
-            <div class="book">
-                <h2> Harry Potter and The Philosopher's stone </h2>
-                <img src="3._SY475_.jpg" alt="Harry Potter and The Philosopher's stone">
-            </div>
-        </a>
-        <br>
-        <a href="mbook2.html">
-            <div class="book">
+           
+           <div class="latest_book_card">
+            
+  
+              <div class="book_img">
+                <img src="71k9zlFpoDL._SY425_.jpg" alt="Stop Over Thinking">             
+                </div>
+  
+            <div class="book_tag">
                 <h2>Stop Over Thinking</h2>
-                <img src="71k9zlFpoDL._SY425_.jpg" alt="Stop Over Thinking">
-                
+                <a href="mbook2.html" class="btn">Learn More</a> 
             </div>
-        </a> 
-   
+           
+           </div>
+  
+        </div>
     </div>
-        <br>
-        <footer>
-        <div id="contact">
-            <h2>Contact Us</h2>
-            <ul>
-                <li> Email : library@gmail.com</li>
-                <li> Phone Number : +20**********</li>
-                <li> <a href="www.facebook.com" target="_blank">Facebook page</a></li>
-                <li><a href="www.instagram.com" >Instagram page</a> </li>
-            </ul>
+        <!-- <a href="fbook3.html">
+        <div class="book">
+            <h2> Harry Potter and The Philosopher's stone </h2>
+            <img src="3._SY475_.jpg" alt="Harry Potter and The Philosopher's stone">
         </div>
-        <br>
+        </a>
     
-        <div id="about">
-            <pre><h2>Our library website:</h2>
-    Your place to read ebooks for free by an easy way!
-    We are committed to providing you with a wide range of electronic books, including but not limited to  novels, short stories, textbooks and reference
-    That all in one place that providing by our team of students.
-            </pre>
+    <a href="mbook2.html">
+        <div class="book">
+            <h2>Stop Over Thinking</h2>
+            <img src="71k9zlFpoDL._SY425_.jpg" alt="Stop Over Thinking">
+            
         </div>
-    </footer>
-    </body>
+    </a> 
+
+    </div> -->
+</div>
+    <br>
+    <footer>
+
+        <div class="footer_main">
+            <div class="tag">
+                <img src="css_Folder/logo.jpg">
+                <p>our place to read ebooks for free by an easy way!
+                    We are committed to providing you with a wide range of electronic books, including but not limited to  novels, short stories, textbooks and reference
+                    That all in one place that providing by our team of students.</p>
+            </div>
+
+            <div class="tag">
+                <h1>Quick Links</h1>
+                <a href="#">Home</a>
+                <a href="#">Latest Books</a>
+                <a href="#">About Us</a>
+               
+            </div>
+            
+            <div class="tag">
+                <h1>Contact Us</h1>
+                <a href="#"><i class="fa-solid fa-phone"></i>+20**********</a>
+                <a href="#"><i class="fa-solid fa-envelope"></i>library@gmail.com</a>
+                
+               
+            </div>
+
+            <div class="tag">
+                <h1>Follow Us</h1>
+                <div class="social">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                </div>
+               
+            </div>
+
+        </div>
+
+    <p class="end">Designed by <span><i class="fa-regular fa-face-smile"></i>FCAI Students</span></p>
+</footer>
+</body>
 </html>
